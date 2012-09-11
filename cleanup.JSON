@@ -1,0 +1,2641 @@
+[
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "guineabissau",
+          "Guinea-Bissau"
+        ],
+        "to": "Guinea-Bissau"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "namibia",
+          "Namibia"
+        ],
+        "to": "Namibia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "guinea",
+          "Guinea"
+        ],
+        "to": "Guinea"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "djibouti",
+          "Djibouti"
+        ],
+        "to": "Djibouti"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "chad",
+          "Chad"
+        ],
+        "to": "Chad"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "comoros",
+          "Comoros"
+        ],
+        "to": "Comoros"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "zimbabwe",
+          "Zimbabwe"
+        ],
+        "to": "Zimbabwe"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "australia",
+          "Australia"
+        ],
+        "to": "Australia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Mozambique",
+          "mozambique"
+        ],
+        "to": "Mozambique"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "rwanda",
+          "Rwanda"
+        ],
+        "to": "Rwanda"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "mali",
+          "Mali"
+        ],
+        "to": "Mali"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ghana",
+          "Ghana"
+        ],
+        "to": "Ghana"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "tanzania",
+          "Tanzania"
+        ],
+        "to": "Tanzania"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "botswana",
+          "Botswana"
+        ],
+        "to": "Botswana"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "central african republic",
+          "Central African Republic"
+        ],
+        "to": "Central African Republic"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Korea, North",
+          "North Korea"
+        ],
+        "to": "Korea, North"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "burundi",
+          "Burundi"
+        ],
+        "to": "Burundi"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "senegal",
+          "Senegal"
+        ],
+        "to": "Senegal"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "belize",
+          "Belize"
+        ],
+        "to": "Belize"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "gabon",
+          "Gabon"
+        ],
+        "to": "Gabon"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "cameroon",
+          "Cameroon"
+        ],
+        "to": "Cameroon"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "kenya",
+          "Kenya"
+        ],
+        "to": "Kenya"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "niger",
+          "Niger"
+        ],
+        "to": "Niger"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "canada",
+          "Canada"
+        ],
+        "to": "Canada"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "uganda",
+          "Uganda"
+        ],
+        "to": "Uganda"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "mauritius",
+          "Mauritius"
+        ],
+        "to": "Mauritius"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "morocco",
+          "Morocco"
+        ],
+        "to": "Morocco"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "libya",
+          "Libya"
+        ],
+        "to": "Libya"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "zaire",
+          "Zaire"
+        ],
+        "to": "Zaire"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "zambia",
+          "Zambia"
+        ],
+        "to": "Zambia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "seychelles",
+          "Seychelles"
+        ],
+        "to": "Seychelles"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "bahamas",
+          "Bahamas"
+        ],
+        "to": "Bahamas"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "swaziland",
+          "Swaziland"
+        ],
+        "to": "Swaziland"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Korea, South",
+          "South Korea"
+        ],
+        "to": "Korea, South"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "togo",
+          "Togo"
+        ],
+        "to": "Togo"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "tunisia",
+          "Tunisia"
+        ],
+        "to": "Tunisia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "algeria",
+          "Algeria"
+        ],
+        "to": "Algeria"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ethiopia",
+          "Ethiopia"
+        ],
+        "to": "Ethiopia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "egypt",
+          "Egypt"
+        ],
+        "to": "Egypt"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "lesotho",
+          "Lesotho"
+        ],
+        "to": "Lesotho"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "somalia",
+          "Somalia"
+        ],
+        "to": "Somalia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "liberia",
+          "Liberia"
+        ],
+        "to": "Liberia"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "mauritania",
+          "Mauritania"
+        ],
+        "to": "Mauritania"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "nigeria",
+          "Nigeria"
+        ],
+        "to": "Nigeria"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "equatorialguinea",
+          "Equatorial Guinea"
+        ],
+        "to": "Equatorial Guinea"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Cape Verde",
+          "capeverde"
+        ],
+        "to": "Cape Verde"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "southafrica",
+          "South Africa"
+        ],
+        "to": "South Africa"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "burkinafaso",
+          "Burkina Faso"
+        ],
+        "to": "Burkina Faso"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "newzealand",
+          "New Zealand"
+        ],
+        "to": "New Zealand"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Vietnam",
+          "Viet Nam"
+        ],
+        "to": "Viet Nam"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Sao Tome and Principe",
+          "saotomeandprincipe"
+        ],
+        "to": "Sao Tome and Principe"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "sierraleone",
+          "Sierra Leone"
+        ],
+        "to": "Sierra Leone"
+      },
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Guinea-Bissau",
+          "Guinea Bissau"
+        ],
+        "to": "Guinea-Bissau"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "United States",
+          "United States of America"
+        ],
+        "to": "United States of America"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "austria empire"
+        ],
+        "to": "Austria Empire"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "british honduras"
+        ],
+        "to": "British Honduras"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "country",
+          "omitBlank": false,
+          "columnName": "country",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 12,
+                "l": "12"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "congo"
+        ],
+        "to": "Congo Brazzaville"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "country",
+          "omitBlank": false,
+          "columnName": "country",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 15,
+                "l": "15"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ethiopiaeritrea"
+        ],
+        "to": "Ethiopia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "country",
+          "omitBlank": false,
+          "columnName": "country",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 15,
+                "l": "15"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Ethiopia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Germanyeast"
+        ],
+        "to": "Germany East"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Germanywest"
+        ],
+        "to": "Germany West"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "gran colombia"
+        ],
+        "to": "Gran Colombia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "hungary empire"
+        ],
+        "to": "Hungary Empire"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ivorycoast"
+        ],
+        "to": "Ivory Coast"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "leeward island f"
+        ],
+        "to": "Leeward Islands Federation"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "madagascarmalagasy"
+        ],
+        "to": "Madagascar (Malagasy)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "malawirepublic"
+        ],
+        "to": "Malawi Republic"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ottoman empire"
+        ],
+        "to": "Ottoman Empire"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "pakistanincludingbangladesh"
+        ],
+        "to": "Pakistan (including Bangladesh)"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "thegambia"
+        ],
+        "to": "The Gambia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "up of central america"
+        ],
+        "to": "United Provinces of Central America"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "UPCA"
+        ],
+        "to": "United Provinces of Central America"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "ussr"
+        ],
+        "to": "USSR"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "west indies f"
+        ],
+        "to": "West Indies Federation"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "YemenNorth"
+        ],
+        "to": "Yemen North"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "YemenSouth"
+        ],
+        "to": "Yemen South"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 14,
+                "l": "14"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Egypt"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 105,
+                "l": "105"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Denmark"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 108,
+                "l": "108"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Germany West"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column country",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "countryn",
+          "selectBlank": true,
+          "columnName": "countryn",
+          "omitBlank": false,
+          "type": "list",
+          "selection": []
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "country",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "114"
+        ],
+        "to": "Italy"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 120,
+                "l": "120"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Portugal"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column country",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "countryn",
+          "selectBlank": true,
+          "columnName": "countryn",
+          "omitBlank": false,
+          "type": "list",
+          "selection": []
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "country",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Italy"
+        ],
+        "to": "114"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "114",
+                "l": "114"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Italy"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 123,
+                "l": "123"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Sweden"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 124,
+                "l": "124"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Switzerland"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 128,
+                "l": "128"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Yugoslavia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 140,
+                "l": "140"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Saudi Arabia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 100,
+                "l": "100"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Yemen North"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 173,
+                "l": "173"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Russia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 178,
+                "l": "178"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Yemen South"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 191,
+                "l": "191"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Germany"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 30,
+                "l": "30"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Morocco"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 44,
+                "l": "44"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Tunisia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 532,
+                "l": "532"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Austrian Empire"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 532,
+                "l": "532"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "Austria Empire"
+        ],
+        "to": "Austrian Empire"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 63,
+                "l": "63"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Panama"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 66,
+                "l": "66"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Argentina"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 79,
+                "l": "79"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "China"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 82,
+                "l": "82"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Iran"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 85,
+                "l": "85"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Japan"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 99,
+                "l": "99"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Thailand"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 92,
+                "l": "92"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Nepal"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column countryn",
+    "engineConfig": {
+      "facets": [
+        {
+          "expression": "value",
+          "invert": false,
+          "selectError": false,
+          "omitError": false,
+          "name": "country",
+          "selectBlank": false,
+          "columnName": "country",
+          "omitBlank": false,
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": 540,
+                "l": "540"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "countryn",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": true,
+        "fromError": false,
+        "from": [],
+        "to": "Ottoman Empire"
+      }
+    ]
+  }
+]
+
+[
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_continent_name",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "countryn",
+          "omitBlank": false,
+          "columnName": "countryn",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Austrian Empire",
+                "l": "Austrian Empire"
+              }
+            },
+            {
+              "v": {
+                "v": "Hungary Empire",
+                "l": "Hungary Empire"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "un_continent_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "Europe"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_continent_name",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "countryn",
+          "omitBlank": false,
+          "columnName": "countryn",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Gran Colombia",
+                "l": "Gran Colombia"
+              }
+            },
+            {
+              "v": {
+                "v": "Leeward Islands Federation",
+                "l": "Leeward Islands Federation"
+              }
+            },
+            {
+              "v": {
+                "v": "Leeward Islands",
+                "l": "Leeward Islands"
+              }
+            },
+            {
+              "v": {
+                "v": "West Indies Federation",
+                "l": "West Indies Federation"
+              }
+            },
+            {
+              "v": {
+                "v": "United Provinces of Central America",
+                "l": "United Provinces of Central America"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "un_continent_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "Americas"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_continent_name",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "un_continent_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "Asia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_region_name",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "un_continent_name",
+          "omitBlank": false,
+          "columnName": "un_continent_name",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Asia",
+                "l": "Asia"
+              }
+            }
+          ]
+        },
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "countryn",
+          "omitBlank": false,
+          "columnName": "countryn",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Vietnam, South",
+                "l": "Vietnam, South"
+              }
+            },
+            {
+              "v": {
+                "v": "Vietnam, North",
+                "l": "Vietnam, North"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "un_region_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "South-Eastern Asia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_region_name",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "un_continent_name",
+          "omitBlank": false,
+          "columnName": "un_continent_name",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Asia",
+                "l": "Asia"
+              }
+            }
+          ]
+        },
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "countryn",
+          "omitBlank": false,
+          "columnName": "countryn",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "British India",
+                "l": "British India"
+              }
+            },
+            {
+              "v": {
+                "v": "Pakistan (including Bangladesh)",
+                "l": "Pakistan (including Bangladesh)"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "un_region_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "Southern Asia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_region_name",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "un_continent_name",
+          "omitBlank": false,
+          "columnName": "un_continent_name",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Asia",
+                "l": "Asia"
+              }
+            }
+          ]
+        },
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "countryn",
+          "omitBlank": false,
+          "columnName": "countryn",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "East Timor",
+                "l": "East Timor"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "un_region_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "South-Eastern Asia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_region_name",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "un_continent_name",
+          "omitBlank": false,
+          "columnName": "un_continent_name",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Asia",
+                "l": "Asia"
+              }
+            }
+          ]
+        },
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "countryn",
+          "omitBlank": false,
+          "columnName": "countryn",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Ottoman Empire",
+                "l": "Ottoman Empire"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "un_region_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "Western Asia"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_region_name",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "countryn",
+          "omitBlank": false,
+          "columnName": "countryn",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Gran Colombia",
+                "l": "Gran Colombia"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "un_region_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "South America"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_region_name",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "countryn",
+          "omitBlank": false,
+          "columnName": "countryn",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Hungary Empire",
+                "l": "Hungary Empire"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "un_region_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "Eastern Europe"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_region_name",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "countryn",
+          "omitBlank": false,
+          "columnName": "countryn",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "Leeward Islands Federation",
+                "l": "Leeward Islands Federation"
+              }
+            },
+            {
+              "v": {
+                "v": "Leeward Islands",
+                "l": "Leeward Islands"
+              }
+            },
+            {
+              "v": {
+                "v": "West Indies Federation",
+                "l": "West Indies Federation"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "un_region_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "Caribbean"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_region_name",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "countryn",
+          "omitBlank": false,
+          "columnName": "countryn",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "United Provinces of Central America",
+                "l": "United Provinces of Central America"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "un_region_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "Central America"
+      }
+    ]
+  },
+  {
+    "op": "core/mass-edit",
+    "description": "Mass edit cells in column un_region_name",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "un_region_name",
+    "expression": "value",
+    "edits": [
+      {
+        "fromBlank": false,
+        "fromError": false,
+        "from": [
+          "NA"
+        ],
+        "to": "Western Europe"
+      }
+    ]
+  },
+  {
+    "op": "core/row-removal",
+    "description": "Remove rows",
+    "engineConfig": {
+      "facets": [
+        {
+          "invert": false,
+          "expression": "value",
+          "selectError": false,
+          "omitError": false,
+          "selectBlank": false,
+          "name": "countryn",
+          "omitBlank": false,
+          "columnName": "countryn",
+          "type": "list",
+          "selection": [
+            {
+              "v": {
+                "v": "NA",
+                "l": "NA"
+              }
+            }
+          ]
+        }
+      ],
+      "mode": "row-based"
+    }
+  }
+]
