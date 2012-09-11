@@ -20,23 +20,14 @@ source("Processing PIPE.R", echo=TRUE)
 library(ggplot2)
 library(plyr)
 
-# Video 1: The expansion of the franchise throughout the world, 1788-2008.
-# The labeled version of the video needs to be done manually, year by year, 
-# setting the ". The loop below generates the png files, which then can be  
-# stitched together into a video using various software packages
 
-# Not run:
-# for (year in 1788:2008) {
-#   png(file = paste(getwd(), "/Map Files/", year,".png", sep = ""))
-#   plot.map(year)
-#   dev.off()
-# }
 
-# Video 1: Suffrage throughout history
+# Slideshow 1: Suffrage throughout history
 
 suffrage.map <- function(year) {
   
   data.year <- PIPE[PIPE$year == year, ]
+  
   map("world",col="lightgrey", mar = c(0,1.1,0,1.1)) #plots outline of world
   
   #colors
@@ -108,7 +99,7 @@ for (year in 1788:2008) {
 }
 
 
-# Figure 1: the expansion of the franchise, 1788-2008
+# Figure 1: Franchise types worldwide, 1788-2008
 
 all.countries <- qplot(data = PIPE,
                        x = year, 
@@ -116,24 +107,6 @@ all.countries <- qplot(data = PIPE,
                        binwidth= 1,
                        ylab="Number of countries")
 all.countries + guides(fill = guide_legend(title="Franchise type"))
-
-# Figure 2: Composition of legislatures, 1788-2008
-leg.composition.graph <- qplot(data = PIPE,
-                               x = year,
-                               fill = leg_composition_2,
-                               binwidth = 1) + guides(fill = guide_legend("Composition of legislature"))
-leg.composition.graph
-
-# Figure 3: Partly appointed legislatures in the year 2000
-png(file = paste(getwd(), "/Figure 3 Map of legislature composition 2000", ".png", sep = ""),
-    width = 1000, height = 800)
-map("world", col="lightgrey")
-freq.palette <- brewer.pal(4,"RdYlGn")
-palette(freq.palette)
-leg.txt <- levels(PIPE$leg_composition_2)
-points(x = PIPE$CAPLONG[ PIPE$year == 2000 ], y = PIPE$CAPLAT[ PIPE$year == 2000 ], pch=21, col = "black", bg = PIPE$leg_composition_2[ PIPE$year == 2000 ], cex = 1.5)
-legend(x = "bottom", legend = leg.txt, fill = freq.palette, horiz = TRUE, title = "Composition of legislatures, 2000. White circles indicate no information in dataset.")
-dev.off()
 
 
 # Figure 2: class and gender expansions and contractions of the franchise, 
@@ -173,7 +146,25 @@ other.exclusions.by.region <- qplot(data = PIPE[ !is.na(PIPE$oth_exclusions_2), 
                                     ylab = "Number of country-years with other exclusions, 5 year periods")
 other.exclusions.by.region + guides(fill = guide_legend(title="Region")) + facet_grid(oth_exclusions_2 ~ un_continent_name)
 
-# Figure 6: Elections per year 1788-2008
+# Figure 6: Composition of legislatures, 1788-2008
+leg.composition.graph <- qplot(data = PIPE,
+                               x = year,
+                               fill = leg_composition_2,
+                               binwidth = 1) + guides(fill = guide_legend("Composition of legislature"))
+leg.composition.graph
+
+# Figure 7: Geographical distribution of elected egislatures in the year 2000
+png(file = paste(getwd(), "/Figure 3 Map of legislature composition 2000", ".png", sep = ""),
+    width = 1000, height = 800)
+map("world", col="lightgrey")
+freq.palette <- brewer.pal(4,"RdYlGn")
+palette(freq.palette)
+leg.txt <- levels(PIPE$leg_composition_2)
+points(x = PIPE$CAPLONG[ PIPE$year == 2000 ], y = PIPE$CAPLAT[ PIPE$year == 2000 ], pch=21, col = "black", bg = PIPE$leg_composition_2[ PIPE$year == 2000 ], cex = 1.5)
+legend(x = "bottom", legend = leg.txt, fill = freq.palette, horiz = TRUE, title = "Composition of legislatures, 2000. White circles indicate no information in dataset.")
+dev.off()
+
+# Figure 8: Elections per year 1788-2008
 elections.per.year <- qplot(data = PIPE,
                             x = year,
                             y = total_elections_year,
@@ -181,7 +172,7 @@ elections.per.year <- qplot(data = PIPE,
 elections.per.year 
 
 
-# Figure 7: elections per year as a proportion of states since 1917
+# Figure 9: elections per year as a proportion of states since 1917
 elections.as.prop.of.states <- qplot(data = PIPE[ PIPE$year >= 1917, ]
                                      ,x = year,
                                      y = elections_as_prop_of_countries, 
@@ -191,7 +182,7 @@ elections.as.prop.of.states <- qplot(data = PIPE[ PIPE$year >= 1917, ]
 elections.as.prop.of.states
 
 
-# Figure 8: Elections per year 1788-2008 with opposition
+# Figure 10: Elections per year 1788-2008 with opposition
 elections.per.year.opp <- qplot(data = PIPE,
                                 x = year,
                                 y = total_elections_year_opp,
@@ -199,7 +190,7 @@ elections.per.year.opp <- qplot(data = PIPE,
                                 ylab = "Number of elections per year") + geom_smooth() + guides(colour = guide_legend(title="Opposition?"))
 elections.per.year.opp
 
-# Figure 9: Opposition in politics, according to whether the constitution is in force
+# Figure 11: Opposition in politics, according to whether the constitution is in force
 
 opposition <- qplot(data = PIPE[ !is.na(PIPE$const_inforce_2), ],
                     x=year,
@@ -208,7 +199,7 @@ opposition <- qplot(data = PIPE[ !is.na(PIPE$const_inforce_2), ],
                     binwidth = 1) + guides(fill = guide_legend(title="Opposition?")) + facet_grid(. ~ const_inforce_2) 
 opposition + opts(title = "Constitution in force?", plot.title = theme_text(size=12))
 
-# Figure 10: Opposition in politics, 1788-2008, by region
+# Figure 12: Opposition in politics, 1788-2008, by region
 opposition.by.region <- qplot(data = PIPE,
                               x = year,
                               fill = un_region_name,
@@ -216,7 +207,7 @@ opposition.by.region <- qplot(data = PIPE,
                               ylab = "Number of states")
 opposition.by.region + guides(fill = guide_legend(title="Region")) + facet_grid(opposition_2 ~ un_continent_name)
 
-# Figure 11: Opposition in politics, by franchise type
+# Figure 13: Opposition in politics, by franchise type
 opposition.by.franchise <- qplot(data=PIPE,
                                  x=f_simple,
                                  fill=opposition_2,
@@ -227,7 +218,7 @@ opposition.by.franchise <- qplot(data=PIPE,
 opposition.by.franchise + guides(fill = guide_legend(title="Opposition?")) + coord_flip()
 
 
-# Figure 12: Proportion of elections won by incumbent candidate, per year
+# Figure 14: Proportion of elections won by incumbent candidate, per year
 incumbent_win_year <- table(PIPE$year,PIPE$salterel_2)
 incumbent_win_year <- round(prop.table(incumbent_win_year,1)*100,2)
 incumbent_win_year <- as.data.frame(incumbent_win_year)
@@ -253,7 +244,7 @@ incumbent.win.year + geom_point() + guides(colour = guide_legend(title="Electora
 # salterel.by.franchise + guides(fill = guide_legend(title="Alternation?")) + coord_flip() + opts(legend.position = "bottom")
 
 
-# Figure 13: Strong alternation in politics, by country
+# Figure 15: Strong alternation in politics, by country
 PIPE.salterel <- PIPE[ !is.na(PIPE$salterel) , ]
 
 PIPE.salterel <- ddply(PIPE.salterel,
@@ -274,7 +265,8 @@ salterel.by.country
 # salterel_by_country + facet_grid(. ~ un_continent_name)
 
 
-# Figure 14: Proportion of elections won by incumbent party by country
+# Figure 16: Proportion of elections won by incumbent party by country
+
 incumbent_win <- table(PIPE$country,PIPE$salterel)
 incumbent_win <- round(prop.table(incumbent_win,1)*100,2)
 incumbent_win <- as.data.frame(incumbent_win)
@@ -301,9 +293,9 @@ prop.incumbent.wins.by.country <- qplot(data=PIPE.incumbent,
                                         ylab = "Proportion of elections won by incumbent party")
 prop.incumbent.wins.by.country + guides(color = guide_legend(title="Region"), size = guide_legend(title = "N. of elections")) + coord_flip() + geom_vline(xintercept = c(21,52,90), colour = "black") + geom_hline(yintercept = 50, colour = "red") 
 
-# Figure 15: Map showing proportion of elections won by incumbent party by country
+# Figure 17: Map showing proportion of elections won by incumbent party by country
 # Size of circle is proportional to the number of elections the country has experienced
-png(file = paste(getwd(), "/Figure 15 Map of incumbent win proportions", ".png", sep = ""),
+png(file = paste(getwd(), "/Figure 17 Map of incumbent win proportions", ".png", sep = ""),
     width = 1000, height = 800)
 map("world", col="lightgrey")
 freq.palette <- brewer.pal(11,"RdYlGn")
@@ -314,7 +306,7 @@ points(x = PIPE.incumbent$CAPLONG, y = PIPE.incumbent$CAPLAT, pch=21, col = "bla
 legend(x = "bottom", legend = leg.txt, fill = freq.palette, horiz = TRUE, title = "Percentage of elections where incumbent party remained in power. Size of circles is proportional to the number of elections")
 dev.off()
 
-# Figure 16: Participaiton in elections in elections by franchise
+# Figure 18: Participation in elections (ratio of voters to total population) by franchise, scatterplot
 participation <- qplot(data=PIPE[ !is.na(PIPE$legpart_pr) , ], 
                        x=year, 
                        y=legpart_pr,
@@ -324,6 +316,7 @@ participation <- qplot(data=PIPE[ !is.na(PIPE$legpart_pr) , ],
 
 participation + guides(color = guide_legend(title="Franchise types"))
 
+# Figure 19: Participation in elections (ratio of voters to total population) by franchise, boxplot
 participation.2 <- qplot(data=PIPE[ !is.na(PIPE$legpart_pr) , ], 
                        x=f_simple, 
                        y=legpart_pr,
@@ -334,6 +327,7 @@ participation.2 <- qplot(data=PIPE[ !is.na(PIPE$legpart_pr) , ],
 
 participation.2 + guides(color = guide_legend(title="Opposition?")) + coord_flip()
 
+# Figure 20: Turnout in elections with and without opposition
 PIPE.turnout <- PIPE[ !is.na(PIPE$turnout_leg) , ]
 turnout_leg.opposition <- qplot(data=PIPE.turnout[ !is.na(PIPE.turnout$opposition_2) , ],
                            x=year,
@@ -343,8 +337,8 @@ turnout_leg.opposition <- qplot(data=PIPE.turnout[ !is.na(PIPE.turnout$oppositio
                            ylab="Turnout in legislative elections")
 turnout_leg.opposition + geom_smooth() + guides(color = guide_legend(title="opposition?"))
 
-# Figure 17: Turnout in elections with and without opposition
 
+# Figure 21: Turnout in elections with and without opposition (boxplot)
 turnout_leg.opposition.boxplot <- qplot(data=PIPE.turnout[ !is.na(PIPE.turnout$opposition_2) , ], 
                                         x=opposition_2,
                                         y=turnout_leg,
@@ -355,7 +349,7 @@ turnout_leg.opposition.boxplot <- qplot(data=PIPE.turnout[ !is.na(PIPE.turnout$o
 turnout_leg.opposition.boxplot + guides(color = guide_legend(title="Compulsory voting?")) + coord_flip() + opts(legend.position = "bottom")
 
 
-# Figure 18: Turnout in all countries
+# Figure 22: Turnout in all countries
 turnout_country_3 <- qplot(data=PIPE[ !is.na(PIPE$turnout_leg), ],
                            y=turnout_leg,
                            x=reorder(countryn, median_turnout_leg),
