@@ -1,46 +1,45 @@
-# require(foreign)
-# PIPE <- read.dta("../Data/PIPE_master_092011.dta")
-# PIPE <- transform(PIPE, polstatus_names = 
+# In order to reproduce the graphs, you will need access to the PIPE dataset by
+# Adam Przeworski et. al. This dataset is available here:
+# https://sites.google.com/a/nyu.edu/adam-przeworski/home/data
 #
-# calculating turnout (warning - some turnouts exceed 100%)
-# PIPE <- transform(PIPE, turnout_leg = legpart_pr / eligible_pr)
-# PIPE <- transform(PIPE, turnout_pres = prespart_pr / eligible_pr)
-#
-# Processing DD
-# dd <- read.csv("../Data/ddrevisited-data-v1.csv")
-# dd <- transform(dd, regime_type = factor(democracy,
-#                                          labels=c("Dictatorship","Democracy")))
-#
-# PIPE <- ddply(PIPE,
-#                 .(country), 
-#                 transform, 
-#                 cowcodes2 = max(cowcodes,na.rm=TRUE))
-#
-# 
-# To find capitals
-# require(cshapes)
-# 
-# cshp.data <- cshp()
-# cshp.yearly <- cshapes2yearly(cshp.data, 
-#                               vars=c("CNTRY_NAME","CAPNAME","CAPLONG","CAPLAT"),
-#                               useGW=FALSE)
-# 
-# names(cshp.yearly)[1] <- "cowcodes2"
-# 
-# PIPE <- merge(cshp.yearly, PIPE, all=TRUE)
+# The dataset requires a bit of cleanup before the graphs below can be reproduced
+# exactly. The country names (column countryn) are a bit jumbled (and some are 
+# missing), and franchise information for Russia is missing. I used Google Refine 
+# to cleanup country names and fix a number of minor issues; the JSON extract of
+# most of these changes is pasted to the file "cleanup.JSON." I also used the 
+# cshapes package by Nils Weidmann to add most capitals (others I added manually). The 
+# additional data generated during the process (changed country names, franchise 
+# info for Russia, capital names and latitudes and longitudes, useful codes for 
+# merging with other datasets) is all available in the file "Additional Data and Codes for PIPE.csv", 
+# which you should save in your working directory and then run this file to 
+# process the PIPE dataset so that the graphs in the post can be replicated.
 
-source("auxiliary functions.R")
-
+library(foreign)
+library(RColorBrewer)
 library(plyr)
-PIPE <- read.csv("PIPE.csv")
-# Uncomment this bit if you haven't merged it already
-# codes <- read.csv(paste(getwd(), "/../Data/codes.csv", sep=""))
-# names(codes)[3] <- "country"
-# PIPE <- merge(PIPE, codes,all=TRUE)
-# rm(codes)
 
-# Take off a few rows which only have capitals, not data
-PIPE <- subset(PIPE, !is.na(country))
+PIPE <- read.dta("../Data/PIPE_master_092011.dta") # change directory as appropriate 
+PIPE.additional.data <- read.csv("Additional Data and Codes for PIPE.csv")
+
+# To clean up countrynames and add additional franchise info, we first rename the 
+# columns of the dataset to be replaced.
+# 
+# This way we can just replace them by the columns of cleaned up names and 
+# modified franchise information
+
+columns.to.change <- c("countryn","f","ext_type","oth_exclusions")
+names(PIPE)[ names(PIPE) %in% columns.to.change] <- paste(columns.to.change,"_original",sep="")
+
+# And now we merge the original dataset with the additional data - latitudes and 
+# longitudes, capital names, franchise information for Russia, and various useful codes
+
+PIPE <- merge(PIPE,PIPE.additional.data,all=TRUE)
+PIPE <- PIPE[ order(PIPE$country, PIPE$year), ]
+rm(PIPE.additional.data)
+
+# We add a column for turnout (warning - some turnouts exceed 100%)
+PIPE <- transform(PIPE, turnout_leg = legpart_pr / eligible_pr)
+PIPE <- transform(PIPE, turnout_pres = prespart_pr / eligible_pr)
 
 # Add an extra franchise value, for those countries with at least
 # partly elected legislatures, but no franchise information in the dataset, 
@@ -50,9 +49,8 @@ PIPE <- subset(PIPE, !is.na(country))
 PIPE <- transform(PIPE, 
                   f_full = ifelse(is.na(f),
                                   ifelse(leg_composition >= 5,
-                                         "SN/O",NA), f))
+                                         "SN/O",NA), ifelse(f==70, 7 , f)))
 
-PIPE$f_full <- ifelse(PIPE$f_full==70, 7 , PIPE$f_full)
 
 PIPE$f_full_descriptions <- as.factor(PIPE$f_full)
 
@@ -86,9 +84,12 @@ PIPE <- transform(PIPE, f_full_2 = ifelse(is.na(f),
 PIPE$f_full_2 <-ifelse(PIPE$f_full_2 < 10, PIPE$f_full_2*10, PIPE$f_full_2)
 
 
-
-PIPE <- PIPE[ order(PIPE$country, PIPE$year), ]
+# This variable indicates changes in franchise that are not captured by ext_type
+# since ext_type is sometimes recorded in years where no changes happened
 PIPE <- ddply(PIPE, .(country), transform, ext_type_2 = c(NA,diff(f_full_2)))
+
+# This is mostly a hack to suss out the inconsistencies between ext_type and
+# ext_type_2
 
 PIPE <- ddply(PIPE, .(country), transform, f_prev = c(NA,f_full_2[1: length(country) - 1]))
 
@@ -172,16 +173,29 @@ levels(PIPE$f_simple) <- c("No suffrage",
                            "Subnational/Other")
 
 
+# Add descriptions for the franchise extensions
 
 PIPE$ext_type_descriptions_1 <- PIPE$ext_type 
 PIPE$ext_type_descriptions_2 <- PIPE$ext_type 
 
-PIPE$ext_type_descriptions_1 <- ifelse(PIPE$ext_type_descriptions == 0,
+PIPE$ext_type_descriptions_1 <- ifelse(PIPE$ext_type_descriptions_1 == 0,
                                      NA,
-                                     PIPE$ext_type_descriptions)
+                                     PIPE$ext_type_descriptions_1)
 
 PIPE$ext_type_descriptions_1 <- as.factor(PIPE$ext_type_descriptions_1)
 PIPE$ext_type_descriptions_2 <- as.factor(PIPE$ext_type_descriptions_2)
+levels(PIPE$ext_type_descriptions_1) <- c("Contraction",
+                                          "Exp. by class",
+                                          "Exp. by gender",
+                                          "Exp. by class and gender")
+levels(PIPE$ext_type_descriptions_2) <- c("Contraction",
+                                          "No change",
+                                          "Exp. by class",
+                                          "Exp. by gender",
+                                          "Exp. by class and gender")
+
+# Add descriptions for the "other exclusions"
+
 PIPE$oth_exclusions_2 <- ifelse(PIPE$oth_exclusions == 0,NA,PIPE$oth_exclusions)
 PIPE$oth_exclusions_labels <- paste(PIPE$countryn,
                                     ":",
@@ -202,28 +216,24 @@ levels(PIPE$oth_exclusions_descriptions) <- c("-1:? ",
                                               "67: 6 and 7 together",
                                               "78: 7 and the propertied excluded",
                                               "236: 2 3 and 6 together")
+
+# Add descriptions for the "opposition" variable
 PIPE$opposition_2 <- as.factor(PIPE$opposition)
 levels(PIPE$opposition_2) <- c("No","Yes")
 
+# Add descriptions for the "Strong Alternation" variable
 PIPE$salterel_2 <- as.factor(PIPE$salterel)
 levels(PIPE$salterel_2) <- c("Inc. defeat, challenger takeover after interregnum",
                              "Non-partisan",
                              "Incumbent remains in office",
                              "Party and leader change")
 
-levels(PIPE$ext_type_descriptions_1) <- c("Contraction",
-                                          "Exp. by class",
-                                          "Exp. by gender",
-                                          "Exp. by class and gender")
-levels(PIPE$ext_type_descriptions_2) <- c("Contraction",
-                                          "No change",
-                                          "Exp. by class",
-                                          "Exp. by gender",
-                                          "Exp. by class and gender")
+# Add descriptions for the "Compulsory voting" variable
 
 PIPE$compulsory_2 <- as.factor(PIPE$compulsory)
 levels(PIPE$compulsory_2) <- c("Unknown","No","Yes")
 
+# This is necessary to do the graphs on "Strong Alternation"
 PIPE.salterel <- PIPE[ !is.na(PIPE$salterel) , ]
 
 PIPE.salterel <- ddply(PIPE.salterel,
@@ -231,15 +241,18 @@ PIPE.salterel <- ddply(PIPE.salterel,
                        transform,
                        salterel_count = length(salterel))
 
+# Calculates mean, median, max, and min turnout per country
 PIPE <- ddply(PIPE, .(country), transform, mean_turnout_leg = mean(turnout_leg,na.rm=TRUE))
 PIPE <- ddply(PIPE, .(country), transform, median_turnout_leg = median(turnout_leg,na.rm=TRUE))
 
 PIPE <- ddply(PIPE, .(country), transform, max_turnout_leg = max(turnout_leg,na.rm=TRUE))
 PIPE <- ddply(PIPE, .(country), transform, min_turnout_leg = min(turnout_leg,na.rm=TRUE))
 
+# Add descriptions for the "Constitution in force" variable
 PIPE$const_inforce_2 <- ifelse(PIPE$const_inforce != 0, "Yes","No")
 PIPE$const_inforce_2 <- as.factor(PIPE$const_inforce_2)
 
+# Calculate total elections per country/year/region
 PIPE <- ddply(PIPE, .(year), transform, total_elections_year = sum(legelec, na.rm=TRUE) + sum(preselec, na.rm=TRUE))
 
 PIPE <- ddply(PIPE, .(country), transform, total_elections_country = sum(legelec, na.rm=TRUE) + sum(preselec, na.rm=TRUE))              
@@ -254,11 +267,20 @@ PIPE <- ddply(PIPE, .(year), transform, elections_as_prop_of_countries = total_e
 
 PIPE$leg_composition_2 <- cut(PIPE$leg_composition, c(-1,0.99,4.99,8.99,12), labels = c("No legislature","Fully appointed","Partly appointed","Fully elected"))
 
-
-
-
-
 # Add a consistent color palette for the simplified and complex franchise value
+addColorColumn <- function(column) {
+  column <- as.factor(column)
+  num.colors <- length(levels(column))
+  if(num.colors > 11) {
+    pal <- rainbow(num.colors)    
+  }
+  else {
+    pal <- brewer.pal(num.colors,"RdYlGn")
+  }
+  
+  levels(column) <- pal
+  return(column)
+}
 
 PIPE$f_simple_color <- addColorColumn(PIPE$f_simple)
 PIPE$f_color <- addColorColumn(PIPE$f)
@@ -267,4 +289,5 @@ PIPE$oth_exclusions_color <- addColorColumn(PIPE$oth_exclusions_descriptions)
 PIPE$opposition_color <- addColorColumn(PIPE$opposition)
 PIPE$salterel_color <- addColorColumn(PIPE$salterel)
 
+rm(columns.to.change, extra.contractions, extra.expansions, extra.nochanges, first.entry, full.contractions, full.expansions, mixed, nochanges.from.sno, other.NAs, sure.NAs, sure.nochanges)
 print("Finished Processing PIPE")
