@@ -6,19 +6,12 @@
 # https://sites.google.com/a/nyu.edu/adam-przeworski/home/data
 #
 # The dataset requires a bit of cleanup before the graphs below can be reproduced
-# exactly. I have used Google Refine to cleanup country names and fix a number of 
-# minor issues; the JSON extract of these changes is pasted to the file 
-# "cleanup.JSON." Save the dataset as a csv file, and then process it in Google
-# Refine by applying the JSON extract. See also the file "Processing PIPE.R",  
-# which you will need also, for further details.
-#
-# Finally, you will need the files "codes.csv", and "auxiliary functions.R". Place 
-# them all in the same directory as this file and the PIPE dataset.
+# exactly. See also the file "Processing PIPE.R", which you will need, for further details.
 
-source("auxiliary functions.R")
 source("Processing PIPE.R", echo=TRUE)
 library(ggplot2)
 library(plyr)
+library(maps)
 
 
 
@@ -46,7 +39,6 @@ suffrage.map <- function(year) {
   #legend labels and colors
   leg.colors <- as.character(levels(PIPE$f_simple_color))
   leg.labels <- levels(as.factor(PIPE$f_simple))
-  print(leg.labels)
   
   leg.2.symbols <- c(21,24,25,23)
   leg.2.labels <- c("No change/NA","Expansion","Contraction","Mixed")
