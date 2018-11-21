@@ -7,7 +7,7 @@ https://sites.google.com/a/nyu.edu/adam-przeworski/home/data
 
 You will need the file "Additional Data and Codes for PIPE.csv" to fix country names, add latitude, longitude, and region information, other codes, and franchise information for Russia.
 
-Put the PIPE dataset in an an appropriate Data directory, modify the directory in "Processing PIPE.R" accordingly, and then run the script.
+Put the PIPE dataset in an appropriate Data directory, modify the directory in "Processing PIPE.R" accordingly, and then run the script.
 
 To produce the graphs, run "Final Graphs.R"
 
